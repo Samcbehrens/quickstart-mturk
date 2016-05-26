@@ -7,8 +7,8 @@ from boto.mturk.qualification import Qualifications, PercentAssignmentsApprovedR
 from boto.mturk.price import Price
 
 #Start Configuration Variables
-AWS_ACCESS_KEY_ID = "XXX"
-AWS_SECRET_ACCESS_KEY = "XXX"
+AWS_ACCESS_KEY_ID = "AKIAIYP75WEXWYM5KA3A"
+AWS_SECRET_ACCESS_KEY = "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"
 DEV_ENVIROMENT_BOOLEAN = True
 DEBUG = True
 #End Configuration Variables
@@ -35,7 +35,7 @@ qualifications.add(PercentAssignmentsApprovedRequirement(comparator="GreaterThan
 qualifications.add(NumberHitsApprovedRequirement(comparator="GreaterThan", integer_value="100"))
 
 #This url will be the url of your application, with appropriate GET parameters
-url = "https://my-application.herokuapp.com/?someInfoToPass=INFORMATIONBEINGPASSED" 
+url = "google.com" 
 questionform = ExternalQuestion(url, frame_height)
 create_hit_result = connection.create_hit(
     title="Insert the title of your HIT",
